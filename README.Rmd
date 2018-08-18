@@ -3,9 +3,12 @@ title: "The simplerspec spectral data processing pipeline"
 author: "Philipp Baumann // philipp.baumann@usys.ethz.ch"
 date: "Last updated: `r Sys.Date()`"
 output:
-  github_document:
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
     toc: true
     toc_depth: 2
+    latex_engine: xelatex
   html_document:
     fig_caption: yes
     number_sections: yes
@@ -16,14 +19,18 @@ output:
     number_sections: yes
     toc: true
     toc_depth: 2
-  pdf_document:
-    fig_caption: yes
-    number_sections: yes
+  github_document:
     toc: true
     toc_depth: 2
-    latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+# The pipeline in a nutshell
+
+<a href="https://github.com/philipp-baumann/spectro-platform-graphs/blob/master/simplerspec-read-proc-tibble.png"><img src="https://github.com/philipp-baumann/spectro-platform-graphs/blob/master/simplerspec-read-proc-tibble.png" width="630"/></a>
+
+
+

@@ -41,7 +41,7 @@ vctrs::vec_equal(spc_alpha_rs_old, spc_alpha_rs_new)
 # Test if corresponding (list-)columns are equall
 map2(.x = spc_alpha_rs_old, .y = spc_alpha_rs_new, ~ vec_equal(.x, .y))
 
-# Test equality of first resampled spectra
+# Test equality of first resampled spectrum
 vec_equal(
   spc_alpha_rs_old$spc_rs[[1]],
   spc_alpha_rs_new$spc_rs[[1]]
